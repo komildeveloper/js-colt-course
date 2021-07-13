@@ -1,11 +1,29 @@
-let password = 'hellokitty';
+// Truthy & Falsy values
 
-if (password.length >= 6) {
-  if (password.indexOf(' ') === -1) {
-    console.log('VALID PASSWORD!');
-  } else {
-    console.log('Password is long enough, but cannot contain spaces');
-  }
+// Falsy Values
+/**
+ * false
+ * 0
+ * "" (empty string)
+ * null
+ * undefined
+ * NaN
+ */
+
+// Everything else is truthy!
+
+let mystery;
+
+if (mystery) {
+  console.log('TRUTHY!');
 } else {
-  console.log('PASSWORD MUST BE LONG!');
+  console.log('FALSY!');
+}
+
+let loggedInUser = '';
+
+if (loggedInUser) {
+  console.log('YOU ARE LOGGED IN!');
+} else {
+  console.log('PLEASE LOG IN!');
 }
