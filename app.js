@@ -1,29 +1,25 @@
-// Truthy & Falsy values
+// Logical Operators
 
-// Falsy Values
 /**
- * false
- * 0
- * "" (empty string)
- * null
- * undefined
- * NaN
+ * && - AND
+ * || - OR
+ * !  - NOT
  */
 
-// Everything else is truthy!
+/**
+let password = 'chicken Gal';
 
-let mystery;
-
-if (mystery) {
-  console.log('TRUTHY!');
+if (password.length >= 8 && password.indexOf(' ') === -1) {
+  console.log('VALID PASSWORD');
 } else {
-  console.log('FALSY!');
+  console.log('INVALID PASSWORD');
 }
+*/
 
-let loggedInUser = '';
+let num = 1;
 
-if (loggedInUser) {
-  console.log('YOU ARE LOGGED IN!');
+if (num >= 1 && num <= 11) {
+  console.log('Number is between 1 and 10');
 } else {
-  console.log('PLEASE LOG IN!');
+  console.log('Please guess a number between 1 and 10');
 }
