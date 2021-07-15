@@ -1,0 +1,38 @@
+/** let animals = ['shark', 'salmon', 'whale', 'bear', 'lizard', 'tortoise'];
+
+let add = animals.splice(0, 0, 'tiger');
+
+let replace = animals.splice(2, 1, 'lion');
+console.log(animals);
+
+let del = animals.splice(3, 2);
+console.log(animals); */
+
+// Useful code from Colt Steele
+
+let animals = ['shark', 'salmon', 'whale', 'bear', 'lizard', 'tortoise'];
+
+//splice(startIdx, deleteCount, itemsToInsert);
+
+// =====================
+// INSERTING w/ SPLICE
+// =====================
+// 'at index 1, delete 0 items and insert "octopus"'
+animals.splice(1, 0, 'octopus');
+//["shark", "octopus", "salmon", "whale", "bear", "lizard", "tortoise"]
+
+// =====================
+// DELETING w/ SPLICE
+// =====================
+//'at index 5, delete 2 items'
+animals.splice(5, 2);
+//["shark", "octopus", "salmon", "whale", "bear"]
+
+// =====================
+// REPLACING w/ SPLICE
+// =====================
+//'at index 3, delete 2 items and replace them with "orca" and "grizzly"'
+animals.splice(3, 2, 'orca', 'grizzly');
+// ["shark", "octopus", "salmon", "orca", "grizzly"]
+
+console.log(animals);
