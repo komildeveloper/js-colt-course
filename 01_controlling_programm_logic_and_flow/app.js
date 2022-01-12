@@ -1,15 +1,29 @@
-if(1 !== 1) {
-  console.log("It's True!");
+// Performance Review
+// 3 - superstar
+// 2 - meets exepectations
+// 1 - needs improvement
+// anything else - wtf?
+let rating = 213
+
+if (rating === 3) {
+	console.log('YOU ARE A SUPERSTAR!')
+} else if (rating === 2) {
+	console.log('MEETS EXEPECTATIONS')
+} else if (rating === 1) {
+	console.log('NEEDS IMPROVEMENT')
+} else {
+	console.log('INVALID RATING!')
 }
 
 // Example 2
-let rating = 3;
-if(rating === 3) {
-  console.log('YOU ARE A SUPERSTAR!');
-}
+let highScore = 1430
+let userScore = 1600
 
-// Example 3
-let num = 37;
-if(num % 2 !== 0) {
-  console.log('ODD NUMBER!');
+if (userScore >= highScore) {
+	console.log(`Congrats, you have the new high score of ${userScore}`)
+	highScore = userScore
+} else {
+	console.log(
+		`Good Game. Your score of ${userScore} did not beat thee high score of ${highScore}`
+	)
 }
