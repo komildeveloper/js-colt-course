@@ -1,15 +1,15 @@
-let mystery = '';
+// LOGICAL AND (&&)
+let password = 'chicken Gal'
 
-if(mystery) {
-  console.log('TRUTHY');
+if(password.length >= 8 && password.indexOf(' ') === -1) {
+  console.log('VALID PASSWORD!');
 } else {
-  console.log('FALSY');
+  console.log('INVALID PASSWORD');
 }
 
-let loggedInUser = "thomas123";
-
-if(loggedInUser) {
-  console.log('YOU ARE LOGGED IN!');
+let num = 1
+if(num >= 1 && num < 11) {
+  console.log('Number is between 1 and 10');
 } else {
-  console.log('PLEASE LOG IN');
+  console.log('Please guess a number between 1 and 10');
 }
