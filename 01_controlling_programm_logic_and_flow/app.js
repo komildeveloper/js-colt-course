@@ -1,11 +1,15 @@
-let password = 'hellokitty';
+let mystery = '';
 
-if(password.length >= 6) {
-  if(password.indexOf(' ') === -1) {
-    console.log('Valid Password!');
-  } else {
-    console.log('Password is long enough, but cannot contain spaces');
-  }
+if(mystery) {
+  console.log('TRUTHY');
 } else {
-  console.log('Password must be longer!');
+  console.log('FALSY');
+}
+
+let loggedInUser = "thomas123";
+
+if(loggedInUser) {
+  console.log('YOU ARE LOGGED IN!');
+} else {
+  console.log('PLEASE LOG IN');
 }
