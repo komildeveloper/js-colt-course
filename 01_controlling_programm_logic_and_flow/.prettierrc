@@ -2,7 +2,6 @@
   "singleQuote": true,
   "semi": true,
   "bracketSpacing": true,
-  "bracketLine": true,
   "requirePragma": true,
   "useTabs": true,
   "arrowParens": "avoid",
