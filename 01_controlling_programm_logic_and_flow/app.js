@@ -1,16 +1,17 @@
-// LOGICAL OR (||)
-/* let age = 78;
+let loggedInUser;
 
-if(age < 6 || age >= 65) {
-  console.log('YOU GET IN FOR FREE!');
-} else {
-  console.log('YOU MUST PAYYYY!');
+// If there isn't a loggedInUser
+
+if(!loggedInUser) {
+  console.log('GET OUT OF HERE!');  
+}
+
+let flavor = 'grape'
+
+/* if(flavor !== 'grape' && flavor !== 'cherry') {
+  console.log('we don\'t have that flavor!'); 
 } */
 
-let color = 'violet';
-
-if(color === 'purple' || color === 'lilac' || color === 'violet') {
-  console.log('GREAT CHOICE!');
-} else {
-  console.log('PLEASE CHOICE PURPLE OR LILAC OR VIOLET!');
+if(!(flavor === 'grape' || flavor === 'cherry')) {
+  console.log('we only have grape and cherry!'); 
 }
