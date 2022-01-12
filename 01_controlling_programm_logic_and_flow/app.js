@@ -1,15 +1,16 @@
-// LOGICAL AND (&&)
-let password = 'chicken Gal'
+// LOGICAL OR (||)
+/* let age = 78;
 
-if(password.length >= 8 && password.indexOf(' ') === -1) {
-  console.log('VALID PASSWORD!');
+if(age < 6 || age >= 65) {
+  console.log('YOU GET IN FOR FREE!');
 } else {
-  console.log('INVALID PASSWORD');
-}
+  console.log('YOU MUST PAYYYY!');
+} */
 
-let num = 1
-if(num >= 1 && num < 11) {
-  console.log('Number is between 1 and 10');
+let color = 'violet';
+
+if(color === 'purple' || color === 'lilac' || color === 'violet') {
+  console.log('GREAT CHOICE!');
 } else {
-  console.log('Please guess a number between 1 and 10');
+  console.log('PLEASE CHOICE PURPLE OR LILAC OR VIOLET!');
 }
