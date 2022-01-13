@@ -1,17 +1,16 @@
-let topSongs = [
-	'First Time Ever I Saw Your Face',
-	'God Only Knows',
-	'A Day In The Life',
-	'Life On Mars'
-]
+let dishesTodo = ['big platter']
 
-// push
-topSongs.push('Fortunate Song')
-topSongs.push(true)
+// unshift
+console.log(dishesTodo.unshift('large plate'))
+console.log(dishesTodo.unshift('small plate'))
+console.log(dishesTodo.unshift('creal bowl'))
+console.log(dishesTodo.unshift('mug'))
+console.log(dishesTodo.unshift('dirty spoon'))
 
-//pop
-topSongs.pop();
-const nextSong = topSongs.pop();
+// shift
+console.log(dishesTodo.shift());
+console.log(dishesTodo.shift());
+console.log(dishesTodo.shift());
+console.log(dishesTodo.shift());
 
-console.log(topSongs)
-console.log(nextSong)
+console.log(dishesTodo)
