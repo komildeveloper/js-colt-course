@@ -1,6 +1,9 @@
-let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
-console.log(colors.length);
-console.log(colors[1]);
-console.log(colors[3]);
-console.log(colors[0]);
-console.log(colors[colors.length - 1]);
+let shoppingList = ['Cheedar Cheese', '2% Milk'];
+
+console.log(shoppingList[1] = 'Whole Milk')
+console.log(shoppingList[2] = 'Ice Cream')
+
+console.log(shoppingList[shoppingList.length] = 'Tomatoes')
+console.log(shoppingList[shoppingList.length] = 'Potatoes')
+console.log(shoppingList[0] = 'Bread');
+console.log(shoppingList);
