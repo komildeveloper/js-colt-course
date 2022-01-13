@@ -1,16 +1,10 @@
-let dishesTodo = ['big platter']
+// concat
+let fruits = ['apple', 'banana'];
+let veggies = ['asparagus', 'brussel spourts'];
+let meats = ['steak', 'chicken breast'];
 
-// unshift
-console.log(dishesTodo.unshift('large plate'))
-console.log(dishesTodo.unshift('small plate'))
-console.log(dishesTodo.unshift('creal bowl'))
-console.log(dishesTodo.unshift('mug'))
-console.log(dishesTodo.unshift('dirty spoon'))
+console.log(fruits.concat(veggies));
+console.log(veggies.concat(fruits));
 
-// shift
-console.log(dishesTodo.shift());
-console.log(dishesTodo.shift());
-console.log(dishesTodo.shift());
-console.log(dishesTodo.shift());
-
-console.log(dishesTodo)
+let allFoods = fruits.concat(veggies, meats);
+console.log(allFoods)
