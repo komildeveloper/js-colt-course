@@ -1,9 +1,17 @@
-let shoppingList = ['Cheedar Cheese', '2% Milk'];
+let topSongs = [
+	'First Time Ever I Saw Your Face',
+	'God Only Knows',
+	'A Day In The Life',
+	'Life On Mars'
+]
 
-console.log(shoppingList[1] = 'Whole Milk')
-console.log(shoppingList[2] = 'Ice Cream')
+// push
+topSongs.push('Fortunate Song')
+topSongs.push(true)
 
-console.log(shoppingList[shoppingList.length] = 'Tomatoes')
-console.log(shoppingList[shoppingList.length] = 'Potatoes')
-console.log(shoppingList[0] = 'Bread');
-console.log(shoppingList);
+//pop
+topSongs.pop();
+const nextSong = topSongs.pop();
+
+console.log(topSongs)
+console.log(nextSong)
