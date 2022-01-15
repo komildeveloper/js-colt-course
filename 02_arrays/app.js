@@ -1,21 +1,25 @@
-// Array.slice()
-let animals = ['shark', 'salmon', 'whale', 'bear', 'lizard', 'tortoise']
+// Array.splice()
+let animals = [ 'shark', 'salmon', 'whale', 'bear', 'lizard', 'tortoise' ];
 
-let swimmers = animals.slice(0, 3)
-console.log(swimmers)
+//splice(startIdx, deleteCount, itemsToInsert);
 
-let mammals = animals.slice(2, 4)
-console.log(mammals)
+// =====================
+// INSERTING w/ SPLICE
+// =====================
+// 'at index 1, delete 0 items and insert "octopus"'
+animals.splice(1, 0, 'octopus');
+//["shark", "octopus", "salmon", "whale", "bear", "lizard", "tortoise"]
 
-// let reptiles = animals.slice(4, 6)
-let reptiles = animals.slice(4)
-console.log(reptiles)
+// =====================
+// DELETING w/ SPLICE
+// =====================
+//'at index 5, delete 2 items'
+animals.splice(5, 2);
+//["shark", "octopus", "salmon", "whale", "bear"]
 
-let quadruped = animals.slice(-3)
-let quadruped2 = animals.slice(-3, -1)
-console.log(quadruped)
-console.log(quadruped2)
-
-// copy
-let copy = animals.slice();
-console.log(copy);
+// =====================
+// REPLACING w/ SPLICE
+// =====================
+//'at index 3, delete 2 items and replace them with "orca" and "grizzly"'
+animals.splice(3, 2, 'orca', 'grizzly');
+// ["shark", "octopus", "salmon", "orca", "grizzly"]
