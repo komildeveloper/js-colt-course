@@ -1,24 +1,13 @@
-/* const target = Math.floor(Math.random() * 10);
-let guess = Math.floor(Math.random() * 10);
+let subreddits = ['soccer', 'popheades', 'cringe', 'books'];
 
-while(guess !== target) {
-  console.log(`Target: ${target} Guess: ${guess}`);
-  guess = Math.floor(Math.random() * 10);
+/*for(let i = 0; i < subreddits.length; i++) {
+  console.log(subreddits[i]);
+} */
+
+for(let sub of subreddits) {
+  console.log(sub);
 }
 
-console.log(`Target: ${target} Guess: ${guess}`);
-console.log('CONGRATS YOU WIN!');
-
-// while (some condition)
-// in the loop, update or attempt to make that condition false */
-const target = Math.floor(Math.random() * 10)
-let guess = Math.floor(Math.random() * 10)
-
-while (true) {
-	if (target === guess) break
-	console.log(`Target: ${target} Guess: ${guess}`)
-	guess = Math.floor(Math.random() * 10)
+for(let char of 'football') {
+  console.log(char.toUpperCase());
 }
-
-console.log(`Target: ${target} Guess: ${guess}`)
-console.log('CONGRATS YOU WIN!')
